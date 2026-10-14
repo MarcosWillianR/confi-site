@@ -4,21 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade · Rédea</title>
+<meta name="description" content="Quais dados o Rédea guarda, para quê, por quanto tempo e como exportar ou excluir tudo.">
 <meta name="theme-color" content="#0f6e64">
 <style>
   :root { color-scheme: light; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
          background: #f4f1eb; color: #14110f; margin: 0; line-height: 1.65; }
   main { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
-  .logo { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+  .logo { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px;
+          color: inherit; text-decoration: none; }
   .mark { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: none;
           box-shadow: 0 4px 12px rgba(15, 110, 100, 0.28); }
   .mark img { width: 100%; height: 100%; display: block; }
   .logo strong { font-size: 20px; letter-spacing: -0.3px; }
   h1 { font-size: 28px; letter-spacing: -0.5px; margin: 0 0 4px; }
   .updated { color: #8a8278; font-size: 14px; margin-bottom: 28px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; letter-spacing: -0.2px; }
+  h2 { font-size: 18px; margin: 36px 0 8px; letter-spacing: -0.2px; }
+  h3 { font-size: 15.5px; margin: 20px 0 4px; }
   p, li { font-size: 15.5px; color: #4a443d; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
   .card { background: #dceeea; border-radius: 14px; padding: 16px 20px; margin: 24px 0;
           font-weight: 600; color: #08413b; }
   a { color: #0f6e64; }
@@ -27,63 +32,198 @@
 </head>
 <body>
 <main>
-  <div class="logo"><div class="mark"><img src="./redea-icon.svg" alt="Rédea" width="40" height="40"></div><strong>Rédea</strong></div>
+  <a class="logo" href="./index.html"><div class="mark"><img src="./redea-icon.svg" alt="" width="40" height="40"></div><strong>Rédea</strong></a>
   <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: julho de 2026</p>
+  <p class="updated">Última atualização: outubro de 2026 · vale a partir da versão 4 do app</p>
 
-  <div class="card">Resumo: o Rédea não coleta nenhum dado seu. Tudo o que você registra
-  fica somente no seu aparelho.</div>
+  <div class="card">Resumo: a partir da versão 4, o Rédea tem conta. O que você registra fica
+  guardado nela, em servidores no Brasil, para você trocar de celular sem perder nada. Seus
+  dados servem só para o app funcionar: sem anúncios, sem rastreamento e sem venda de dados.
+  Você exporta ou apaga tudo pelo próprio app, quando quiser.</div>
 
-  <h2>Onde ficam os seus dados</h2>
-  <p>Todas as informações que você registra no Rédea — transações, contratos, categorias,
-  limites e configurações — são armazenadas em um banco de dados local, dentro do seu
-  próprio aparelho. Nada é enviado para servidores nossos ou de terceiros. O Rédea funciona
-  inteiramente offline e não exige cadastro, conta ou login.</p>
+  <h2 id="controlador">Quem cuida dos seus dados</h2>
+  <p>O Rédea é desenvolvido por Marcos Willian, o responsável (controlador, na Lei Geral de
+  Proteção de Dados — LGPD, Lei 13.709/2018) pelos dados descritos aqui. Para qualquer
+  assunto de privacidade, inclusive como canal do encarregado, escreva para
+  <a href="mailto:markusuuuu@gmail.com">markusuuuu@gmail.com</a>.</p>
 
-  <h2>O que não fazemos</h2>
+  <h2 id="versao-4">O que mudou na versão 4</h2>
+  <p>Até a versão 3, tudo ficava só no aparelho, sem conta. Agora você entra com a Apple ou
+  com o Google, e o que você registra fica guardado na sua conta: se o celular quebrar, for
+  perdido ou trocado, é só entrar de novo. Quem usava a versão anterior decide se traz os
+  dados do aparelho para a conta: o app pergunta depois da entrada, e “Agora não” deixa tudo
+  como estava no aparelho.</p>
+
+  <h2 id="dados">Que dados guardamos</h2>
+  <h3>Da sua conta</h3>
   <ul>
-    <li>Não coletamos dados pessoais ou financeiros.</li>
-    <li>Não usamos ferramentas de análise (analytics) nem rastreadores.</li>
-    <li>Não exibimos anúncios.</li>
-    <li>Não vendemos, alugamos ou compartilhamos informações — não temos acesso a elas.</li>
+    <li>Seu nome (o que você informa no app, ou o que vem da Apple ou do Google) e o e-mail
+    da conta Apple ou Google. Se você escolher “Ocultar Meu E-mail” na Apple, recebemos só
+    o endereço de encaminhamento da Apple.</li>
+    <li>O identificador da sua conta Apple ou Google, para reconhecer você nas próximas
+    entradas.</li>
+    <li>O fuso horário do aparelho, para o “hoje” e os vencimentos serem os seus.</li>
   </ul>
 
-  <h2>Microfone e reconhecimento de fala</h2>
-  <p>Se você optar por registrar transações por voz, o Rédea usa o microfone e o serviço de
-  reconhecimento de fala do próprio sistema (Apple) apenas durante o registro. O áudio é
-  processado conforme as configurações do seu aparelho e a
-  <a href="https://www.apple.com/br/privacy/">política de privacidade da Apple</a>;
-  o Rédea não grava, armazena nem envia áudio a servidores próprios. O uso da voz é
-  opcional — todas as funções existem também por digitação.</p>
+  <h3>O que você registra</h3>
+  <ul>
+    <li>Renda declarada, como você recebe e o dia do pagamento.</li>
+    <li>Lançamentos: valor, descrição, data, mês do orçamento, categoria e conta.</li>
+    <li>Contas e cartões: nome, banco, cor e os dias de fechamento e de vencimento.</li>
+    <li>Compromissos: parcelamentos, financiamentos e contas recorrentes, com valores,
+    parcelas, juros, pausas e pagamentos.</li>
+    <li>Categorias, limites e o planejamento de cada mês.</li>
+  </ul>
 
-  <h2>Importação e exportação de arquivos</h2>
-  <p>Arquivos de extrato (OFX) que você importa são lidos e processados localmente, no
-  aparelho. Ao exportar dados (CSV), o arquivo só é compartilhado se e para onde você
-  escolher, pela tela de compartilhamento do sistema.</p>
+  <h3>Na importação de extrato (OFX)</h3>
+  <p>O arquivo que você escolhe é enviado ao servidor só para ser lido, e não fica guardado.
+  Ficam os lançamentos que você aceitar, o nome do arquivo, o banco e o código que o banco dá
+  a cada transação (para a mesma transação não entrar duas vezes).</p>
 
-  <h2>Assinatura Premium</h2>
-  <p>O Rédea oferece uma assinatura opcional (Rédea Premium). A compra e a cobrança são
-  processadas pela App Store da Apple; o Rédea não recebe nem armazena os dados do seu
-  cartão. Usamos o serviço RevenueCat apenas para validar o status da assinatura, associado
-  a um identificador anônimo — sem nome, e-mail ou dados financeiros. Consulte os
+  <h3>Para a segurança da conta</h3>
+  <ul>
+    <li>As sessões abertas: datas, a identificação técnica do app que entrou (como as versões
+    do app e do sistema) e uma versão embaralhada (hash) da chave da sessão. Não existe
+    senha: você entra pela Apple ou pelo Google.</li>
+    <li>Um histórico de eventos da conta (entradas, saídas, importações, exportações e a
+    vinda dos dados da versão anterior), com data, hora e contagens, sem valores nem
+    descrições. O endereço IP de cada entrada fica guardado só como hash.</li>
+    <li>Se você entra com a Apple, um código de acesso que a Apple fornece, guardado
+    criptografado e usado só para encerrar esse acesso quando você exclui a conta.</li>
+  </ul>
+
+  <h3>Registros técnicos do servidor</h3>
+  <p>Cada conexão gera um registro com o endereço IP, a data e a hora, o endereço da
+  requisição e o resultado. Esses registros não trazem seu nome, seu e-mail, valores nem
+  descrições, e servem para manter o serviço no ar e investigar falhas e abusos.</p>
+
+  <h3>O que não coletamos</h3>
+  <p>Não usamos ferramentas de análise (analytics), rastreadores nem SDKs de publicidade.
+  Não coletamos sua localização, seus contatos ou suas fotos, e não pedimos nem guardamos
+  dados de pagamento, números de cartão ou de conta bancária.</p>
+
+  <h2 id="aparelho">O que fica só no seu aparelho</h2>
+  <ul>
+    <li>A chave da sua sessão, no armazenamento seguro do sistema (Keychain no iPhone,
+    Keystore no Android).</li>
+    <li>As preferências deste aparelho: o bloqueio por Face ID ou biometria, “Ocultar
+    valores”, os avisos de vencimento e a última conta usada.</li>
+    <li>Os avisos de vencimento, agendados no próprio aparelho (o Rédea não envia
+    notificações pelo servidor). Eles mostram o nome da conta, a data e o valor, ou
+    “R$ •••” com “Ocultar valores” ligado.</li>
+    <li>Os widgets do iPhone: o valor do dia, a sobra do mês e as próximas contas ficam
+    gravados para o widget mostrar, e entram no backup do iPhone. Ao sair da conta, são
+    apagados.</li>
+    <li>Face ID, Touch ID e digital: quem verifica é o sistema. O Rédea só fica sabendo se deu
+    certo e não tem acesso aos seus dados biométricos.</li>
+    <li>Os arquivos que você exporta: criados só quando você pede, compartilhados só para onde
+    você escolher e apagados pelo app depois (no máximo na próxima vez que você abrir o app,
+    ou ao sair da conta).</li>
+    <li>A cópia da versão anterior: depois de trazer os dados da versão 3 para a conta, o banco
+    antigo fica no aparelho como cópia de segurança, fora dos backups do iCloud e do Google,
+    até você desinstalar o app.</li>
+  </ul>
+
+  <h2 id="voz">Registro por voz</h2>
+  <p>É opcional. Quando você toca no microfone, o Rédea usa o reconhecimento de fala do
+  sistema: no iPhone, o da Apple; no Android, o serviço de fala do aparelho (em geral, o do
+  Google). Esse serviço pode processar o áudio nos servidores da empresa, conforme as
+  configurações do aparelho e a política de privacidade
+  <a href="https://www.apple.com/br/legal/privacy/">da Apple</a> ou
+  <a href="https://policies.google.com/privacy?hl=pt-BR">do Google</a>. O Rédea recebe só o
+  texto, não grava nem guarda o áudio e não o envia aos próprios servidores. O texto só vira
+  lançamento depois que você confirma, e tudo o que dá para fazer por voz também dá pelo
+  teclado.</p>
+
+  <h2 id="finalidades">Para que usamos e com que base legal</h2>
+  <ul>
+    <li>Para prestar o serviço que você pediu ao criar a conta: guardar e mostrar seus dados,
+    calcular a sobra, os previstos e os avisos, importar extratos e trazer os dados da versão
+    anterior (execução de contrato, art. 7º, V, da LGPD).</li>
+    <li>Para manter sua conta e o serviço seguros: entrar com a Apple ou o Google, manter as
+    sessões, detectar uso indevido e investigar falhas (execução de contrato e legítimo
+    interesse, art. 7º, V e IX).</li>
+    <li>Para cumprir obrigações legais e ordens de autoridades, quando houver
+    (art. 7º, II).</li>
+  </ul>
+  <p>Não usamos seus dados para publicidade, para traçar perfis de consumo ou para rastrear
+  você em outros apps e sites, e não os vendemos. Os cálculos do app (como a sobra do mês)
+  são só para você ver: não tomamos decisões automatizadas sobre você.</p>
+
+  <h2 id="compartilhamento">Com quem compartilhamos</h2>
+  <ul>
+    <li>Provedores de nuvem que hospedam o servidor e o banco de dados do Rédea, na região de
+    São Paulo. Eles atuam como operadores: guardam e processam os dados só para o Rédea
+    funcionar, conforme as nossas instruções.</li>
+    <li>Apple e Google, quando você entra com eles: eles confirmam quem é você. Ao excluir a
+    conta, avisamos a Apple para encerrar o acesso do Rédea ao seu Apple ID. O que acontece
+    na sua conta Apple ou Google segue a política de privacidade de cada um.</li>
+    <li>Autoridades públicas, só quando a lei ou uma ordem judicial obrigar.</li>
+  </ul>
+  <p>Fora esses casos, o reconhecimento de fala (acima) e a assinatura da versão 3
+  (<a href="#compras">abaixo</a>), ninguém mais recebe seus dados.</p>
+
+  <h2 id="seguranca">Onde ficam e como protegemos</h2>
+  <p>Os dados da sua conta ficam em servidores no Brasil, na região de São Paulo. A conexão
+  entre o app e o servidor é sempre criptografada (HTTPS), o banco de dados é criptografado
+  pelo provedor, e cada pessoa só tem acesso aos próprios dados. Não há senha para vazar, e
+  as sessões expiram e são renovadas. No app, você pode ligar o bloqueio por Face ID ou
+  biometria e o “Ocultar valores”. Se acontecer um incidente de segurança que possa trazer
+  risco a você, avisaremos você e a Autoridade Nacional de Proteção de Dados (ANPD), como
+  manda a lei.</p>
+
+  <h2 id="retencao">Por quanto tempo guardamos</h2>
+  <ul>
+    <li>Os dados da conta, o que você registra e o histórico de eventos: enquanto a conta
+    existir. Se você parar de usar o Rédea sem excluir a conta, os dados continuam guardados
+    para quando você voltar.</li>
+    <li>Ao excluir a conta, tudo é apagado na hora, inclusive o histórico de eventos. Fica só
+    o registro de que uma conta foi excluída, sem nenhum dado seu. As cópias de segurança
+    automáticas do banco de dados são substituídas em até 30 dias.</li>
+    <li>Os registros técnicos do servidor: até 30 dias.</li>
+  </ul>
+
+  <h2 id="direitos">Seus direitos</h2>
+  <p>Pela LGPD, você pode, a qualquer momento:</p>
+  <ul>
+    <li><strong>Acessar e levar seus dados:</strong> no app, em Ajustes (toque na sua inicial,
+    no alto do Início) → “Exportar meus dados”, que gera um arquivo JSON com tudo da sua
+    conta. O extrato também sai em CSV.</li>
+    <li><strong>Corrigir:</strong> lançamentos, compromissos, contas, categorias e renda se
+    editam no próprio app; para corrigir nome ou e-mail, escreva para nós.</li>
+    <li><strong>Excluir a conta e todos os dados:</strong> no app, em Ajustes → “Excluir
+    conta”. É imediato e definitivo. Sem o app, veja
+    <a href="./excluir-conta.html">como pedir a exclusão</a>.</li>
+    <li><strong>Pedir informações:</strong> confirmar se tratamos seus dados, saber com quem
+    os compartilhamos, se opor a um uso ou tirar outra dúvida, por
+    <a href="mailto:markusuuuu@gmail.com">markusuuuu@gmail.com</a>. Respondemos em até
+    15 dias.</li>
+    <li><strong>Reclamar à ANPD</strong>, em
+    <a href="https://www.gov.br/anpd/">gov.br/anpd</a>.</li>
+  </ul>
+
+  <h2 id="criancas">Crianças e adolescentes</h2>
+  <p>O Rédea é feito para adultos que cuidam do próprio dinheiro e não é direcionado a menores
+  de 18 anos. Se você é responsável por uma criança ou adolescente que criou uma conta,
+  escreva para nós e apagamos os dados.</p>
+
+  <h2 id="compras">Compras</h2>
+  <p>A versão 4 é gratuita, sem anúncios e sem compras dentro do app. Nenhum dado de
+  pagamento é pedido.</p>
+  <p>Na versão 3, a assinatura opcional Rédea Premium é cobrada pela App Store da Apple: o
+  Rédea não recebe nem guarda os dados do seu cartão. O serviço RevenueCat valida o status da
+  assinatura com um identificador anônimo, sem nome, e-mail ou dados financeiros. Consulte os
   <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termos de Uso (EULA)</a>.</p>
 
-  <h2>Exclusão dos dados</h2>
-  <p>Como tudo fica no seu aparelho, você tem controle total: ao desinstalar o Rédea,
-  todos os dados são removidos junto com o app. Recomendamos exportar um CSV antes, se
-  quiser guardar um histórico.</p>
+  <h2 id="mudancas">Mudanças nesta política</h2>
+  <p>Quando esta política mudar, a nova versão aparece nesta página, com a data atualizada.
+  Se a mudança for importante (por exemplo, um uso novo dos seus dados), avisamos antes, pelo
+  e-mail da sua conta ou no app.</p>
 
-  <h2>Crianças</h2>
-  <p>O Rédea não coleta dados de nenhum usuário, incluindo menores de idade.</p>
-
-  <h2>Mudanças nesta política</h2>
-  <p>Se esta política mudar, a nova versão será publicada nesta página com a data de
-  atualização revisada.</p>
-
-  <h2>Contato</h2>
+  <h2 id="contato">Contato</h2>
   <p>Dúvidas sobre privacidade? Escreva para
   <a href="mailto:markusuuuu@gmail.com">markusuuuu@gmail.com</a>.</p>
 </main>
-<footer>© 2026 Rédea · Todos os dados ficam com você.</footer>
+<footer>© 2026 Rédea · Seus dados, sob o seu controle.</footer>
 </body>
 </html>
