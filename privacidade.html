@@ -93,9 +93,11 @@
   </ul>
 
   <h3>Registros técnicos do servidor</h3>
-  <p>Cada conexão gera um registro com o endereço IP, a data e a hora, o endereço da
-  requisição e o resultado. Esses registros não trazem seu nome, seu e-mail, valores nem
-  descrições, e servem para manter o serviço no ar e investigar falhas e abusos.</p>
+  <p>Cada conexão gera um registro com a data e a hora, a função acessada (como
+  “lançamentos”) e o resultado. Esses registros não trazem seu endereço IP, seu nome, seu
+  e-mail, valores nem descrições, e servem para manter o serviço no ar e investigar falhas e
+  abusos. Eles ficam com o provedor do servidor, nos Estados Unidos, e são apagados em até
+  7 dias.</p>
 
   <h3>O que não coletamos</h3>
   <p>Não usamos ferramentas de análise (analytics), rastreadores nem SDKs de publicidade.
@@ -164,7 +166,9 @@
   (<a href="#compras">abaixo</a>), ninguém mais recebe seus dados.</p>
 
   <h2 id="seguranca">Onde ficam e como protegemos</h2>
-  <p>Os dados da sua conta ficam em servidores no Brasil, na região de São Paulo. A conexão
+  <p>Os dados da sua conta ficam em servidores no Brasil, na região de São Paulo. A exceção são
+  os registros técnicos do servidor, sem seu IP, que ficam até 7 dias com o provedor do
+  servidor, nos Estados Unidos. A conexão
   entre o app e o servidor é sempre criptografada (HTTPS), o banco de dados é criptografado
   pelo provedor, e cada pessoa só tem acesso aos próprios dados. Não há senha para vazar, e
   as sessões expiram e são renovadas. No app, você pode ligar o bloqueio por Face ID ou
@@ -180,7 +184,7 @@
     <li>Ao excluir a conta, tudo é apagado na hora, inclusive o histórico de eventos. Fica só
     o registro de que uma conta foi excluída, sem nenhum dado seu. As cópias de segurança
     automáticas do banco de dados são substituídas em até 30 dias.</li>
-    <li>Os registros técnicos do servidor: até 30 dias.</li>
+    <li>Os registros técnicos do servidor: até 7 dias.</li>
   </ul>
 
   <h2 id="direitos">Seus direitos</h2>
